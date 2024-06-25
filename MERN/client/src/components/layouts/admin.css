@@ -1,0 +1,145 @@
+:root {
+  --bg-color: #f4f3ff;
+  --btn-color: #646cff;
+  --dark-color: #242424;
+  --helper-color: #99b9ff;
+}
+th {
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  padding: 3rem;
+  text-align: center;
+  color: var(--dark-color);
+  width: 30rem;
+  box-shadow: 0 0.3rem 0 gray;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  /* border: 3px solid #1fa750; */
+}
+td {
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  padding: 3rem;
+  text-align: center;
+  color: var(--dark-color);
+  width: 30rem;
+  /* border: 3px solid red; */
+}
+table {
+  background: #fff;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+  border-collapse: collapse;
+  border-radius: 1rem;
+}
+.admin-users-section,
+.admin-contacts-section {
+  padding: 2rem;
+}
+
+.admin-contacts-section tr {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(10rem, 1fr));
+  align-items: center;
+  box-shadow: 0 0.3rem 0 gray;
+  margin-bottom: 10px;
+  border-bottom: 4px solid transparent;
+  color: var(--bg-color);
+  &:last-child {
+    box-shadow: none;
+  }
+}
+body tr {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(10rem, 1fr));
+  align-items: center;
+  box-shadow: 0 0.3rem 0 gray;
+  margin-bottom: 10px;
+  border-bottom: 4px solid transparent;
+  color: var(--bg-color);
+  &:last-child {
+    box-shadow: none;
+  }
+}
+.updateLink {
+  margin: 0 auto;
+  text-transform: capitalize;
+  padding: 1rem 2.2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border-radius: 0.8rem;
+  border: 0.1rem solid transparent;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  transition: border-color 0.3s;
+  width: 120px;
+  color: #fff;
+  background: #cff6dd;
+  color: #1fa750;
+  border-radius: 3rem;
+  padding: 1rem 4rem;
+  &:hover {
+    color: #cff6dd;
+    background-color: #1fa750;
+    font-weight: bold;
+  }
+}
+.admin-sertion-form {
+  background-color: #ffffff;
+  max-width: 60rem;
+  padding: 0 10rem;
+  color: var(--dark-color);
+  margin-left: 10rem;
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem;
+    & div {
+      display: grid;
+      & input {
+        background-color: var(--helper-color);
+        border: none;
+        color: var(--dark-color);
+        padding: 1.4rem 0 1.4rem 2rem;
+      }
+      &input,
+      button {
+        max-width: 30rem;
+      }
+    }
+  }
+}
+/* ////////////////////////////////////////////////  */
+/* NavLinks style  */
+#mySidenav li {
+  font-weight: 500;
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+
+  position: absolute;
+  left: -108px;
+  transition: 0.4s;
+  padding: 15px;
+  width: 140px;
+  text-decoration: none;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav li:hover {
+  left: 0;
+}
+#mySidenav a:hover,
+#mySidenav a,
+#mySidenav a:active {
+  color: #fff;
+}
+#admin-users {
+  top: 130px;
+  background-color: #04aa6d;
+}
+
+#admin-contact {
+  top: 200px;
+  background-color: #2196f3;
+}
